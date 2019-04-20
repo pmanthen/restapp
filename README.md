@@ -1,2 +1,2 @@
 # restapp
-This application should demo full devops lifecycle.
+This application should demo full devops lifecycle
