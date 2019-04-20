@@ -15,6 +15,12 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/target'
+    Contents: '*.war'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
 - task: PublishBuildArtifacts@1
   inputs:
     ArtifactName: 'drop'
