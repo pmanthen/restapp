@@ -15,7 +15,7 @@ public class Application extends PackagesResourceConfig{
 	@Path("/healthCheck")
 	@Produces("text/plain")
 	final public String healthCheck() {
-		return "APP is available!" ;
+		return "APP is ready and available!" ;
 	}
 
 	public Application() {
